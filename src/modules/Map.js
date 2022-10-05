@@ -1,3 +1,5 @@
+// Functions taken from https://gist.github.com/xposedbones
+
 function clamp(input, min, max) {
   return input < min ? min : input > max ? max : input;
 }
