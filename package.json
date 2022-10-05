@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-3rd",
+  "version": "1.0.0",
+  "description": "My portfolio with three.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "snowpack dev"
+  },
+  "author": "Lucas Zago",
+  "license": "ISC",
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  },
+  "dependencies": {
+    "three": "^0.145.0",
+    "three-orbitcontrols": "^2.110.3"
+  }
+}
