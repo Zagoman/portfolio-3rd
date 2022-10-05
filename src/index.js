@@ -16,8 +16,8 @@ const clock = new THREE.Clock();
 const geometry = new THREE.TorusGeometry(10, 5, 16, 100);
 const material = new THREE.MeshStandardMaterial({ wireframe: false });
 
-const rectLight = new THREE.RectAreaLight(0xf5769d, 2, 60, 60);
-const rectLight2 = new THREE.RectAreaLight(0xfae4e1, 1.1, 60, 60);
+const rectLight = new THREE.RectAreaLight(0xf5769d, 1.5, 60, 60);
+const rectLight2 = new THREE.RectAreaLight(0xfae4e1, 0.6, 60, 60);
 const ambientLight = new THREE.AmbientLight(0x2d1ef0, 0.4);
 const mesh = new THREE.Mesh(geometry, material);
 
@@ -59,7 +59,6 @@ const tick = () => {
 };
 
 document.addEventListener("mousemove", (e) => {
-  console.log(e.offsetX, e.offsetY);
   mouseX = e.offsetX;
   mouseY = e.offsetY;
 });
