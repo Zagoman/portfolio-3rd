@@ -13,16 +13,16 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 const clock = new THREE.Clock();
 
-const geometry = new THREE.TorusGeometry(10, 5, 16, 100);
+const geometry = new THREE.TorusGeometry(10, 6, 16, 100);
 const material = new THREE.MeshStandardMaterial({ wireframe: false });
 
-const rectLight = new THREE.RectAreaLight(0xf5769d, 1.5, 60, 60);
+const rectLight = new THREE.RectAreaLight(0xf5769d, 1.3, 60, 60);
 const rectLight2 = new THREE.RectAreaLight(0xfae4e1, 0.6, 60, 60);
 const ambientLight = new THREE.AmbientLight(0x2d1ef0, 0.4);
 const mesh = new THREE.Mesh(geometry, material);
 
 scene.add(mesh);
-const controls = new OrbitControls(camera, renderer.domElement);
+// const controls = new OrbitControls(camera, renderer.domElement);
 
 rectLight.position.set(10, 25, 0);
 rectLight.lookAt(0, 0, 0);
@@ -34,7 +34,7 @@ scene.add(ambientLight);
 // light.add(helper);
 
 camera.position.z = 25;
-controls.update();
+// controls.update();
 document.addEventListener("DOMContentLoaded", () => {
   document.body.appendChild(renderer.domElement);
   tick();
@@ -44,16 +44,12 @@ const tick = () => {
   //   // clock
   const elapsedTime = clock.getElapsedTime();
   window.requestAnimationFrame(tick);
-  mesh.rotation.y = map(mouseX, 0, window.innerWidth, -Math.PI / 6, Math.PI / 6);
-  mesh.rotation.x = map(mouseY, 0, window.innerHeight, -Math.PI / 6, Math.PI / 6);
-  // console.log(Number.prototype.map(0, window.innerWidth, 0, 180));
-  // mesh.position.y = Math.sin(elapsedTime) * 1;
-  // mesh.position.x = Math.cos(elapsedTime) * 1;
+  mesh.rotation.y = map(mouseX, 0, window.innerWidth, -Math.PI / 5, Math.PI / 5);
+  mesh.rotation.x = map(mouseY, 0, window.innerHeight, -Math.PI / 5, Math.PI / 5);
+  camera.position.y = Math.sin(elapsedTime) * 2;
+  camera.position.x = Math.cos(elapsedTime) * 2;
   camera.lookAt(mesh.position);
-  // camera.position.x = mouseX;
-  // console.log(mouse);
-  controls.update();
-  // console.log(camera.position);
+  // controls.update();
   //Render
   renderer.render(scene, camera);
 };
