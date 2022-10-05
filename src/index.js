@@ -5,7 +5,7 @@ import Setup from "./modules/Setup";
 
 let _APP = null;
 document.addEventListener("DOMContentLoaded", () => {
-  document.body.appendChild(renderer.domElement);
+  document.querySelector("main").appendChild(renderer.domElement);
   _APP = new Setup();
 
   tick();
