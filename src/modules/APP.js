@@ -34,7 +34,7 @@ export default class APP {
     rectLight2.lookAt(this.mesh.position);
 
     // Set initial positions
-    this.camera.position.z = 35;
+    this.camera.position.z = 45;
     this.mesh.position.set(0, 0, 0);
 
     // add elements to the scene
@@ -45,6 +45,7 @@ export default class APP {
 
     this.renderer.setSize(this.containerSizes.w, this.containerSizes.h);
     this.renderer.render(this.scene, this.camera);
+    this.scene.background = new THREE.Color(0x1b1b1b);
     this.HTML.main.appendChild(this.renderer.domElement);
     this._RAF.bind(this);
     this._RAF();
@@ -67,7 +68,7 @@ export default class APP {
       this.mesh.rotation.x = map(this.mousePos.y, 0, this.containerSizes.h, -Math.PI / 5, Math.PI / 5);
       this.camera.position.y = Math.sin(elapsedTime) * 2;
       this.camera.position.x = Math.cos(elapsedTime) * 2;
-      this.camera.lookAt(this.mesh.position);
+      this.camera.lookAt(0, 0, 0);
       //Render
       this.renderer.render(this.scene, this.camera);
       this._RAF();
