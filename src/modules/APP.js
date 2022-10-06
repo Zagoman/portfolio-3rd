@@ -76,8 +76,9 @@ export default class APP {
 
   _SetEventListeners() {
     document.addEventListener("mousemove", (e) => {
-      this.mousePos.x = e.offsetX;
-      this.mousePos.y = e.offsetY;
+      console.log(e);
+      this.mousePos.x = e.pageX;
+      this.mousePos.y = e.pageY;
     });
     window.addEventListener("resize", (e) => {
       this._OnWindowResize();
