@@ -281,7 +281,7 @@ header aside p {
   width: 80%;
   aspect-ratio: 16/9;
   object-fit: cover;
-  object-position: center center;
+  object-position: center 0;
   order: -1;
   margin-bottom: calc(1 * var(--general_line-height));
 }
