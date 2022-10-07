@@ -73,7 +73,7 @@ main {
   overflow-y: auto;
 }
 section {
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   border-radius: 1rem 1rem 0px 0px;
   /* padding: calc(4 * var(--general_line-height)) calc(2 * var(--general_line-height)); */
   padding: calc(1 * var(--general_line-height)) calc(1 * var(--general_line-height));
@@ -170,6 +170,7 @@ section[data-type="darker"] {
 /* ? end of types of section */
 
 /* ? Nav */
+
 nav {
   display: flex;
   flex-direction: column;
@@ -320,7 +321,20 @@ header aside p {
     display: flex;
     flex-direction: column;
     padding: 0.75rem;
+    align-items: start;
     gap: calc(2 * var(--general_line-height));
+  }
+
+  section {
+    /* overflow-y: scroll; */
+    border-radius: 1rem 1rem 0px 0px;
+    padding: calc(4 * var(--general_line-height)) calc(2 * var(--general_line-height));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    top: 0;
   }
 
   .socials {
@@ -336,6 +350,16 @@ header aside p {
     inset: 0 0 0 0;
   }
   /* ? Nav */
+  header aside p {
+    display: block;
+  }
+  .socials {
+    flex-direction: row;
+  }
+  #burger_trigger {
+    display: none;
+    visibility: hidden;
+  }
   nav {
     display: flex;
     flex-direction: column;
@@ -343,6 +367,7 @@ header aside p {
   }
   nav ul {
     margin-top: auto;
+    display: block;
   }
 
   /* ? end of Nav */
@@ -383,6 +408,7 @@ header aside p {
   .cards article {
     border-bottom: 1px solid rgb(133, 133, 133);
     display: flex;
+    flex-direction: row;
     gap: calc(2 * var(--general_line-height));
   }
 
@@ -390,10 +416,26 @@ header aside p {
     max-width: 90ch;
   }
 
+  .cards a {
+    padding-bottom: calc(0.4 * var(--general_line-height));
+  }
+
   .tags {
-    align-self: end;
+    align-self: start;
+    order: -1;
     margin-bottom: calc(0.5 * var(--general_line-height));
   }
+  .card_bottom {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* justify-content: space-between; */
+    margin-top: 0;
+  }
+  .cards img {
+    display: none;
+  }
+
   /* ? end of Projects */
 
   /* ? Tech Stack */

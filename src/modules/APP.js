@@ -77,7 +77,7 @@ export default class APP {
 
   _SetEventListeners() {
     document.addEventListener("mousemove", (e) => {
-      console.log(e);
+      // console.log(e);
       this.mousePos.x = e.pageX;
       this.mousePos.y = e.pageY;
     });

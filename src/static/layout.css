@@ -23,6 +23,7 @@
   .cards {
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
     gap: calc(1.5 * var(--general_line-height));
     margin-top: calc(4 * var(--general_line-height));
   }
