@@ -23,7 +23,7 @@ export default class UIAnim {
     this.HTML.closeMenuTrigger.addEventListener("click", () => {
       this._AnimateMenu();
     });
-    this.HTML.projectsAnchors.forEach((el) => console.log(el.getBoundingClientRect()));
+    this.HTML.contactAnchors.forEach((el) => console.log(el.getBoundingClientRect()));
     this._ScrollEventListeners();
   }
 
