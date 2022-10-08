@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Hacking Hogwarts",
+    "description": "Some long description here",
+    "imgUrl": "https://source.unsplash.com/featured/300x201",
+    "liveSite": "https://source.unsplash.com/featured/300x201",
+    "tags": ["HTML", "CSS", "JavaScript", "GitHub", "ES6_Modules", "OOP"]
+  },
+  {
+    "id": 2,
+    "name": "Humanize Zuckerberg",
+    "description": "Some long description here",
+    "imgUrl": "https://source.unsplash.com/featured/300x201",
+    "liveSite": "https://source.unsplash.com/featured/300x201",
+    "tags": ["HTML", "CSS", "JavaScript", "GitHub"]
+  },
+  {
+    "id": 3,
+    "name": "Gorilla Agency",
+    "description": "Some long description here",
+    "imgUrl": "https://source.unsplash.com/featured/300x201",
+    "liveSite": "https://source.unsplash.com/featured/300x201",
+    "tags": ["Webflow", "HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 4,
+    "name": "Biobridge Partners",
+    "description": "Some long description here",
+    "imgUrl": "https://source.unsplash.com/featured/300x201",
+    "liveSite": "https://source.unsplash.com/featured/300x201",
+    "tags": ["Webflow", "HTML", "CSS", "JavaScript"]
+  }
+]

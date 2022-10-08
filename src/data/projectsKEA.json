@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Fonts and UI Components",
+    "description": "Project description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus commodi animi nemo quae reprehenderit magnam, maxime quisquam, facilis amet enim cumque. Velit cum commodi et provident voluptatum explicabo quos odio, quo, molestiae maxime itaque, iste ipsam dolores quas consequatur debitis?",
+    "imgUrl": "https://source.unsplash.com/featured/300x201",
+    "liveSite": "https://source.unsplash.com/featured/300x201",
+    "tags": ["HTML", "CSS", "Typography", "Cards", "GitHub"]
+  },
+  {
+    "id": 2,
+    "name": "Colors and Animations",
+    "description": "Project description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus commodi animi nemo quae reprehenderit magnam, maxime quisquam, facilis amet enim cumque. Velit cum commodi et provident voluptatum explicabo quos odio, quo, molestiae maxime itaque, iste ipsam dolores quas consequatur debitis?",
+    "imgUrl": "https://source.unsplash.com/featured/300x201",
+    "liveSite": "https://source.unsplash.com/featured/300x201",
+    "tags": ["HTML", "CSS", "JavaScript", "Colors", "Motion_One", "GitHub"]
+  },
+  {
+    "id": 3,
+    "name": "Responsive Design",
+    "description": "Project description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus commodi animi nemo quae reprehenderit magnam, maxime quisquam, facilis amet enim cumque. Velit cum commodi et provident voluptatum explicabo quos odio, quo, molestiae maxime itaque, iste ipsam dolores quas consequatur debitis?",
+    "imgUrl": "https://source.unsplash.com/featured/300x201",
+    "liveSite": "https://source.unsplash.com/featured/300x201",
+    "tags": ["Webflow", "HTML", "CSS", "JavaScript"]
+  }
+]
