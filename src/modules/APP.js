@@ -24,7 +24,7 @@ export default class APP {
     };
     this.clock = new THREE.Clock();
     this.renderer = new THREE.WebGLRenderer();
-    this.camera = new THREE.PerspectiveCamera(75, this.containerSizes.w / this.containerSizes.h, 0.1, 50);
+    this.camera = new THREE.PerspectiveCamera(75, this.containerSizes.w / this.containerSizes.h, 0.1, 100);
     this.mesh = mesh;
     this.scene = new THREE.Scene();
     this._SetEventListeners();
